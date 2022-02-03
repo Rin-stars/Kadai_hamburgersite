@@ -774,19 +774,19 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   max-height: 283px;
   padding: 120px 8%;
-  background-image: url(/images/img_iPhone_front-page/one-burger-with-vegetable.png);
+  background-image: url(../images/img_iPhone_front-page/one-burger-with-vegetable.png);
 }
 @media (min-width: 600px) {
   .c-image--front-top {
     max-height: 283px;
-    background-image: url(/images/img_TB_front-page/TB__one-burger-with-vegetable.png);
+    background-image: url(../images/img_TB_front-page/TB__one-burger-with-vegetable.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--front-top {
     max-height: 530px;
     padding: 150px 5%;
-    background-image: url(/images/img_PC_front-page/PC__one-burger-with-vegetable.png);
+    background-image: url(../images/img_PC_front-page/PC__one-burger-with-vegetable.png);
   }
 }
 
@@ -794,7 +794,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   min-height: 643px;
   margin: 20px 5%;
-  background-image: url(/images/img_iPhone_front-page/three-burgers-with-white-plates.png);
+  background-image: url(../images/img_iPhone_front-page/three-burgers-with-white-plates.png);
 }
 .c-image--front-left-center > h3, .c-image--front-right-center > h3 {
   position: absolute;
@@ -805,29 +805,29 @@ h1, h2, h3, h4, h5, h6, p {
   .c-image--front-left-center, .c-image--front-right-center {
     width: 100%;
     margin: 40px 3%;
-    background-image: url(/images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
+    background-image: url(../images/img_TB_front-page/TB__three-burgers-with-white-plates.png);
     font-size: 40px;
   }
 }
 @media (min-width: 1025px) {
   .c-image--front-left-center, .c-image--front-right-center {
     margin: 50px 3%;
-    background-image: url(/images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
+    background-image: url(../images/img_PC_front-page/PC__three-burgers-with-white-plates.png);
     font-size: 50px;
   }
 }
 
 .c-image--front-right-center {
-  background-image: url(/images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
+  background-image: url(../images/img_iPhone_front-page/one-baconburger-with-frenchfries.png);
 }
 @media (min-width: 600px) {
   .c-image--front-right-center {
-    background-image: url(/images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
+    background-image: url(../images/img_TB_front-page/TB__one-baconburger-with-frenchfries.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--front-right-center {
-    background-image: url(/images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
+    background-image: url(../images/img_PC_front-page/PC__one-baconburger-with-frenchfries.png);
   }
 }
 
@@ -839,35 +839,35 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   max-height: 283px;
   padding: 120px 8%;
-  background-image: url(/images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
+  background-image: url(../images/img_iPhone_archive-page/iPhone&TB_archive_top.png);
 }
 @media (min-width: 600px) {
   .c-image--archive-top {
     max-height: 283px;
-    background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
+    background-image: url(../images/img_PC_archive-page/PC_archive_top.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--archive-top {
     max-height: 239px;
     padding: 90px 5%;
-    background-image: url(/images/img_PC_archive-page/PC_archive_top.png);
+    background-image: url(../images/img_PC_archive-page/PC_archive_top.png);
   }
 }
 
 .c-image--card {
   min-height: 230px;
-  background-image: url(/images/img_iPhone_archive-page/iPhone_archive_index_card.png);
+  background-image: url(../images/img_iPhone_archive-page/iPhone_archive_index_card.png);
 }
 @media (min-width: 600px) {
   .c-image--card {
     width: 53%;
-    background-image: url(/images/img_TB_archive-page/TB_archive_index_card.png);
+    background-image: url(../images/img_TB_archive-page/TB_archive_index_card.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--card {
-    background-image: url(/images/img_PC_archive-page/PC_archive_index_card.png);
+    background-image: url(../images/img_PC_archive-page/PC_archive_index_card.png);
   }
 }
 
@@ -879,18 +879,18 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   max-height: 225px;
   padding: 110px 8%;
-  background-image: url(/images/img_iPhone_single-page/single_burger_with_tomato.png);
+  background-image: url(../images/img_iPhone_single-page/single_burger_with_tomato.png);
 }
 @media (min-width: 600px) {
   .c-image--single-top {
     max-height: 500px;
     padding: 240px 4%;
-    background-image: url(/images/img_TB_single-page/TB__single_burger_with_tomato.png);
+    background-image: url(../images/img_TB_single-page/TB__single_burger_with_tomato.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--single-top {
-    background-image: url(/images/img_PC_single-page/PC__single_burger_with_tomato.png);
+    background-image: url(../images/img_PC_single-page/PC__single_burger_with_tomato.png);
   }
 }
 
@@ -898,30 +898,30 @@ h1, h2, h3, h4, h5, h6, p {
   /* 横幅100%で綺麗に可変表示させる方法。height: 0、padding-top: 画像の高さ調整 */
   height: 0;
   padding-top: 37%;
-  background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_small.png);
+  background-image: url(../images/img_iPhone_single-page/single_burger_and_frenchfries_small.png);
 }
 @media (min-width: 600px) {
   .c-image--single-middle {
-    background-image: url(/images/img_TB_single-page/TB__single_burger_and_frenchfries_small.png);
+    background-image: url(../images/img_TB_single-page/TB__single_burger_and_frenchfries_small.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--single-middle {
-    background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_small.png);
+    background-image: url(../images/img_PC_single-page/PC__single_burger_and_frenchfries_small.png);
   }
 }
 
 .c-image--single-galarry {
-  background-image: url(/images/img_iPhone_single-page/single_burger_and_frenchfries_learge.png);
+  background-image: url(../images/img_iPhone_single-page/single_burger_and_frenchfries_learge.png);
 }
 @media (min-width: 600px) {
   .c-image--single-galarry {
-    background-image: url(/images/img_TB_single-page/TB__single_burger_and_frenchfries_learge.png);
+    background-image: url(../images/img_TB_single-page/TB__single_burger_and_frenchfries_learge.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--single-galarry {
-    background-image: url(/images/img_PC_single-page/PC__single_burger_and_frenchfries_learge.png);
+    background-image: url(../images/img_PC_single-page/PC__single_burger_and_frenchfries_learge.png);
   }
 }
 
@@ -965,18 +965,18 @@ h1, h2, h3, h4, h5, h6, p {
   height: 100%;
   max-height: 225px;
   padding: 110px 8%;
-  background-image: url(/images/img_page/SP__shop.png);
+  background-image: url(../images/img_page/SP__shop.png);
 }
 @media (min-width: 600px) {
   .c-image--page-top {
     max-height: 500px;
     padding: 240px 4%;
-    background-image: url(/images/img_page/TB__shop.png);
+    background-image: url(../images/img_page/TB__shop.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--page-top {
-    background-image: url(/images/img_page/PC__shop.png);
+    background-image: url(../images/img_page/PC__shop.png);
   }
 }
 
@@ -984,16 +984,16 @@ h1, h2, h3, h4, h5, h6, p {
 /* マップ画像
 /**********************/
 .c-image--map {
-  background-image: url(/images/img_iPhone_front-page/map.png);
+  background-image: url(../images/img_iPhone_front-page/map.png);
 }
 @media (min-width: 600px) {
   .c-image--map {
-    background-image: url(/images/img_TB_front-page/TB__map.png);
+    background-image: url(../images/img_TB_front-page/TB__map.png);
   }
 }
 @media (min-width: 1025px) {
   .c-image--map {
-    background-image: url(/images/img_PC_front-page/PC__map.png);
+    background-image: url(../images/img_PC_front-page/PC__map.png);
   }
 }
 

@@ -1,0 +1,22 @@
+$tb:600px; //Tablet
+$pc:1025px; //PC
+$pc-s:1440px; //PC small
+
+
+@mixin tb {
+    @media (min-width: ($tb)) {
+        @content;
+    }
+}
+
+@mixin pc {
+    @media (min-width: ($pc)) {
+        @content;
+    }
+}
+
+@mixin pc-s {
+    @media (min-width: ($pc)) and (max-width: ($pc-s)) {
+        @content;
+    }
+}

@@ -1,0 +1,163 @@
+@use '../../foundation/mixin' as m;
+
+/**********************/
+/* font-size
+/**********************/
+
+.c-text--40-to-pc64-to-pcs55{
+    font-size: 40px; 
+    @include m.pc{
+        font-size: 64px;
+    };
+    @include m.pc-s{
+        font-size: 55px;
+    };
+}
+.c-text--40-to-tb45-to-pc50{
+    font-size: 40px;
+    @include m.tb{
+        font-size: 45px;
+    };
+    @include m.pc{
+        font-size: 50px;
+    };
+
+}
+.c-text--35-to-tb55{
+    font-size: 35px;
+    @include m.tb{
+        font-size: 55px;
+    };
+}
+.c-text--36-to-pc40{
+    font-size: 36px;
+    @include m.pc{
+        font-size: 40px;
+    };
+}
+.c-text--34{
+    font-size: 34px;
+}
+.c-text--32-to-tb45{
+    font-size: 32px;
+    @include m.tb{
+        font-size: 45px;
+    };
+}
+.c-text--30-to-pc36{
+    font-size: 30px;
+    @include m.pc{
+        font-size: 36px;
+    };
+}
+.c-text--26-to-tb30{
+    font-size: 26px;
+    @include m.tb{
+        font-size: 30px;
+    };
+}
+.c-text--23{
+    font-size: 23px;
+}
+.c-text--20{
+    font-size: 20px;
+}
+.c-text--20-to-tb30{
+    font-size: 20px; 
+    @include m.tb{
+        font-size: 30px;
+    };
+}
+.c-text--20-to-pc28{
+    font-size: 20px; 
+    @include m.pc{
+        font-size: 28px;
+    };
+}
+.c-text--16{ 
+    font-size: 16px;
+}
+.c-text--14{
+    font-size: 14px;
+}
+.c-text--14-to-pc16{
+    font-size: 14px;
+    @include m.pc{
+        font-size: 16px;
+    };
+}
+
+/**********************/
+/* font-family
+/**********************/
+.c-text--M1m{
+    font-family: 'M+ 1m';
+}
+.c-text--Roboto{
+    font-family: 'Roboto', sans-serif;
+}
+
+/**********************/
+/* font-weight
+/**********************/
+.c-text--bold{
+    font-weight: bold;
+}
+
+/**********************/
+/* line-height
+/**********************/
+.c-text--lh33{
+    line-height: 33px;
+}
+.c-text--lh29{
+    line-height: 29px;
+}
+.c-text--lh23{
+    line-height: 23px;
+}
+
+/**********************/
+/* text-align
+/**********************/
+.c-text-align--center{
+    text-align: center;
+}
+.c-text-align--center-to-pc-initial{
+    text-align: center;
+    @include m.pc{
+        text-align: initial;
+    }
+}
+
+
+/**********************/
+/* Others
+/**********************/
+.c-text-deco--underline{
+    text-decoration: underline;
+}
+
+
+.c-text--M1m-lh23-16{
+    font-family: 'M+ 1m';
+    line-height: 23px;
+    font-size: 16px;
+}
+.c-text--M1m-bold-16{
+    font-family: 'M+ 1m';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.c-text--header-logo{
+    padding: 40px;
+    @include m.pc{
+        width: 40%;
+        margin: 45px 20px;
+        padding: 20px;
+    };
+    @include m.pc-s{
+        margin: 50px 10px;
+    };
+}

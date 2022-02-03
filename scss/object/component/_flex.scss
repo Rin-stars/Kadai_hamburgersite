@@ -1,0 +1,48 @@
+@use '../../foundation/mixin' as m;
+
+.c-inline-flex{
+    display: inline-flex;
+}
+.c-flex--jc-center{
+    display: flex;
+    justify-content: center;
+}
+.c-flex--jc-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+.c-inline-flex--jc-center{ //＋align-items: centerでボタン配置しやすい。
+    display: inline-flex;
+    justify-content: center;
+}
+.c-flex--ai-flex-end{
+    display: flex;
+    align-items: flex-end;
+}
+.c-flex--fd-row-reverse{
+    flex-direction: row-reverse;
+}
+.c-flex--fd-column{
+    display: flex;
+    flex-direction:column;  
+}
+.c-flex--fd-column-to-row{
+    display: flex;
+    flex-direction:column;
+    @include m.tb{
+        flex-direction: row;
+    };
+}
+.c-flex--pc-jc-space-between{
+    @include m.pc{
+        display: flex;
+        justify-content: space-between;
+    };
+}
+.c-flex--tb-fw-wrap-and-jc-sb{
+    @include m.tb{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}

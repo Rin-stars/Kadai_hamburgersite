@@ -1,0 +1,38 @@
+@use '../../foundation/mixin' as m;
+
+.p-search{
+    position:relative; 
+    width: 308px;
+    height: 46px;
+    margin:0 auto;
+    @include m.tb{
+        width: 546px;
+        margin: auto;
+    };
+    @include m.pc{
+        margin: auto 20px;
+    };
+    @include m.pc-s{
+        width: 370px;
+    };
+
+}
+.p-search__input{	
+    position:absolute; 
+    left:0;
+    top:0; 
+    width:170px;
+    height:44px;
+    padding: 0 10px 0 40px;
+    border-radius: 10px;
+    border-color: #707070;
+    border-width: 1px;
+    outline:0;	
+    font-size: 18px;
+    @include m.tb{
+        width: 350px;
+    };
+    @include m.pc-s{
+        width: 200px;
+    };
+}

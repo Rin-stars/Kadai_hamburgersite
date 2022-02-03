@@ -1,0 +1,57 @@
+@use '../../foundation/mixin' as m;
+
+.c-container--card{
+    padding: 0 5% 5% 5%;
+}
+.c-container--card-title{
+    padding: 5% 7% 5% 5%;
+    @include m.tb{
+        width: 40%;
+    };
+}
+.c-container--top-title{
+    padding: 30px 5%;
+    @include m.tb{
+        padding: 5%;
+    };
+}
+.c-container--single-main{
+    padding: 30px 5%;
+    @include m.tb{
+        padding: 60px 5%;
+    };
+}
+.c-container--front-inner{
+    width: 100%;
+    padding-top: 70px;
+
+    @include m.tb{
+        font-size: 120px;
+        padding-top: 120px;
+    };
+    @include m.pc{
+        padding-top: 140px;
+    };
+}
+.c-container--front-items{
+    margin: 10px;
+    padding: 20px 10px;
+}
+.c-container--map-text{
+    padding: 40px;
+    @include m.pc{
+        width: 60%;
+    };
+}
+
+.c-container--page{
+    padding: 10px;
+    height: 40px;
+    margin:30px 5% 0 5%;
+}
+.c-container--btn{
+    width: auto;
+}
+.c-container--page-nav{
+    padding: 70px 0 30px 0;
+}

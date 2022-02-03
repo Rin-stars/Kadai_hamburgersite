@@ -1,0 +1,94 @@
+@use '../../foundation/mixin' as m;
+
+.c-btn--nav-open{
+    position: absolute;
+    top: 14px;
+    right: 10px;  
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+
+}
+.c-btn--nav-close{
+    position: absolute;
+    right: 7px;
+    top: 25px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;   
+}
+
+.c-btn--search{
+    position:absolute; 
+    top:0;
+    left: 230px; 
+    width:78px;
+    height:46px;
+    border-radius:10px;
+    border-color: #707070;
+    border-width: 1px;
+    cursor: pointer;
+    @include m.tb{
+        left: 410px;
+        width: 136px;
+    };
+    @include m.pc-s{
+        width: 100px;
+        left: 260px;
+    };
+}
+.c-btn--read-more{   
+    width:163px;
+    height:42px;
+    margin-top: 40px;
+    border-radius:40px;
+    cursor: pointer;
+    @include m.pc{
+        height: 76px;
+        width: 292px;
+    };
+}
+
+.c-btn--pe-prev::before, .c-btn--pe-prev::after{  
+    display: inline-block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    border-top:1px solid #707070;
+    border-right:1px solid #707070;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.c-btn--pe-next::before, .c-btn--pe-next::after{  
+    display: inline-block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    border-top:1px solid #707070;
+    border-right:1px solid #707070;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.c-btn--page-nav li{
+    display: inline;
+    padding:7px 12px;
+    margin: 0 3px;
+    border:1px solid #707070;
+    cursor: pointer;
+}
+.c-btn--page-nav li:first-child{
+    cursor:text;
+}
+.c-btn--big{   
+    width:335px;
+    height:81px;
+    border-radius:20px;
+    border:1px solid #707070;
+    cursor: pointer;
+    @include m.tb{
+        width: 429px;
+        height: 104px;
+    };
+}

@@ -1,0 +1,38 @@
+@use '../../foundation/mixin' as m;
+
+.p-nav{
+    position: relative;
+    top: 130px;
+}
+.p-nav__title{
+    @include m.pc{
+        position: relative;
+        top: 80px;
+        left: 40px;
+    };
+
+}
+.p-nav__item{
+        padding: 10px;
+        font-family: 'M+ 1m';
+        font-size: 20px;
+        > a{
+            color: #707070;
+        }
+}
+.p-nav__item:first-child{
+        padding: 30px 0px;
+        font-size: 24px;
+        font-weight: bold;
+        >a{
+            cursor: text;
+        }
+}
+.p-nav__bg{
+    position: fixed;
+    height: 0;  //デフォルトは0で背景色なし。
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9995;
+}

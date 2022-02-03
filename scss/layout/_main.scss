@@ -1,0 +1,10 @@
+@use '../foundation/mixin' as m;
+
+.l-front, .l-archive, .l-search, .l-single, .l-page{
+    @include m.pc{
+        width: calc(100% - 367px);
+    };
+    @include m.pc-s{
+        width: calc(100% - 270px);
+    };
+}

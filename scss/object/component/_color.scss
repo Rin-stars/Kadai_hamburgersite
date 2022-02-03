@@ -1,0 +1,56 @@
+@use '../../foundation/mixin' as m;
+
+/**********************/
+/* font-color
+/**********************/
+.c-color--white{
+    color: white;
+}
+.c-color--darkbrown{
+    color: #3C2A10;
+}
+.c-color--lightbrown{
+    color: #707070;
+}
+.c-color--dull-blue{
+    color: #4A6C9B;
+}
+
+
+
+/**********************/
+/* background-color
+/**********************/
+.c-bg-color--white{
+    background-color: white;
+}
+.c-bg-color--black{
+    background-color: black;
+}
+.c-bg-color--darkbrown{
+    background-color: #3C2B1C;
+}
+.c-bg-color--lightbrown{
+    background-color: #9D8670
+}
+.c-bg-color--lightbeige{
+    background-color: #FFF7EF;
+}
+.c-bg-color--dull-lightbeige{
+    background-color: #F2EDE9;
+}
+.c-bg-color--dull-lightgray{
+    background-color: #F5F5F5;
+}
+.c-bg-color--tp30-black{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.c-bg-color--tp50-black{
+    background: rgba(0,0,0,.5);
+}
+.c-bg-color--tp60-black{
+    background: rgba(0,0,0,.6);
+}
+.c-bg-color--tp80-white{
+    background-color: rgba(255, 255, 255, 0.8);  
+}
