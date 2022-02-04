@@ -34,4 +34,6 @@ function Hamburger_site_script() {
     }
     add_action( 'wp_enqueue_scripts', 'Hamburger_site_script' );
     
+    register_nav_menu('categorymenu', 'カテゴリーメニュー');
+
 ?>
