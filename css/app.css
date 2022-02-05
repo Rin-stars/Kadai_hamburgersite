@@ -1122,6 +1122,15 @@ figure {
   font-size: 16px;
 }
 
+.c-text--18-to-pc22 {
+  font-size: 18px;
+}
+@media (min-width: 1025px) {
+  .c-text--18-to-pc22 {
+    font-size: 22px;
+  }
+}
+
 .c-text--14 {
   font-size: 14px;
 }
@@ -1139,7 +1148,7 @@ figure {
 /* font-family
 /**********************/
 .c-text--M1m {
-  font-family: "M+ 1m";
+  font-family: "Mplus 1p";
 }
 
 .c-text--Roboto {
@@ -1192,13 +1201,13 @@ figure {
 }
 
 .c-text--M1m-lh23-16 {
-  font-family: "M+ 1m";
+  font-family: "Mplus 1p";
   line-height: 23px;
   font-size: 16px;
 }
 
 .c-text--M1m-bold-16 {
-  font-family: "M+ 1m";
+  font-family: "Mplus 1p";
   font-weight: bold;
   font-size: 16px;
 }
@@ -1506,5 +1515,13 @@ figure {
 
 .u-width--100per {
   width: 100%;
+}
+
+.blog-item__thumbnail-image {
+  height: 100%;
+  min-height: 230px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=app.css.map */
