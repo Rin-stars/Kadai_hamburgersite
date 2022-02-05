@@ -3,12 +3,13 @@
 .c-container--card{
     padding: 0 5% 5% 5%;
 }
-.c-container--card-title{
-    padding: 5% 7% 5% 5%;
-    @include m.tb{
-        width: 40%;
-    };
-}
+//  WP化の際、flex:1;を使う方法に変更
+// .c-container--card-title{
+//     padding: 5% 7% 5% 5%;
+//     @include m.tb{
+//         width: 40%;
+//     };
+// }
 .c-container--top-title{
     padding: 30px 5%;
     @include m.tb{

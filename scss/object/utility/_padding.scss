@@ -3,17 +3,18 @@
 .u-padding--0{
     padding: 0;
 }
-.u-padding--10-0-0-0{
-    padding: 10px 0 0 0;
+.u-padding--5-0-0-10{
+    padding: 5px 0 0 10px;
 }
 .u-padding--30-0{
     padding: 30px 0;
 }
-.u-padding--tb-22-30{
+.u-pd-top--tb15{
     @include m.tb{
-        padding: 22px 30px;
+        padding-top: 15px;
     };    
 }
+
 .u-padding--30-20-to-tb50{
     padding: 30px 20px;
     @include m.tb{
@@ -50,4 +51,15 @@
     @include m.tb{
         padding-bottom: 60px;
     }
+}
+
+.u-pd-top--5per{
+    padding-top: 5%;
+}
+.u-pd-bottom--5per{
+    padding-bottom: 5%;
+}
+.u-pd-right-left--5per{
+    padding-right: 5%;
+    padding-left: 5%;
 }

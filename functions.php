@@ -17,7 +17,7 @@ add_action( 'after_setup_theme', 'custom_theme_support' );
  
 
 
-function Hamburger_site_script() {
+function Hamburger_script() {
 
     $locale = get_locale();
     $locale = apply_filters( 'theme_locale', $locale, 'Hamburger_site' );
@@ -31,13 +31,12 @@ function Hamburger_site_script() {
          wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js' , '', '3.6.0', true );
          wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js' , array(), '1.0.0' );
         //  Googlefontsの読み込み
-        //  wp_enqueue_style( 'robot', '//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), '' );
-        //  wp_enqueue_style( 'mplus', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap', array(), '' );
-            wp_register_style( 'robot', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-            wp_register_style( 'mplus', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
+          wp_enqueue_style( 'robot', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), '' );
+          wp_enqueue_style( 'mplus', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap', array(), '' );
     }
-    add_action( 'wp_enqueue_scripts', 'Hamburger_site_script' );
-    
-    register_nav_menu('sidebar-menu', 'サイドバーメニュー');
+    add_action( 'wp_enqueue_scripts', 'Hamburger_script' );
+
+    // 外観→メニュー画面にある、「メニューの位置」の登録
+    // register_nav_menu('sidebar-menu', 'サイドバーメニュー');
 
 ?>

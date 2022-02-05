@@ -608,15 +608,6 @@ figure {
   padding: 0 5% 5% 5%;
 }
 
-.c-container--card-title {
-  padding: 5% 7% 5% 5%;
-}
-@media (min-width: 600px) {
-  .c-container--card-title {
-    width: 40%;
-  }
-}
-
 .c-container--top-title {
   padding: 30px 5%;
 }
@@ -735,6 +726,10 @@ figure {
     justify-content: space-between;
     gap: 20px;
   }
+}
+
+.c-flex-1 {
+  flex: 1;
 }
 
 /**********************/
@@ -1013,6 +1008,17 @@ figure {
 }
 
 /**********************/
+/* WP アイキャッチ画像
+/**********************/
+.c-img--wp-post-thumbnail {
+  height: 100%;
+  min-height: 230px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/**********************/
 /* font-size
 /**********************/
 .c-text--40-to-pc64-to-pcs55 {
@@ -1118,6 +1124,15 @@ figure {
   }
 }
 
+.c-text--20-to-tb26 {
+  font-size: 20px;
+}
+@media (min-width: 600px) {
+  .c-text--20-to-tb26 {
+    font-size: 26px;
+  }
+}
+
 .c-text--16 {
   font-size: 16px;
 }
@@ -1160,6 +1175,10 @@ figure {
 /**********************/
 .c-text--bold {
   font-weight: bold;
+}
+
+.c-text--bold700 {
+  font-weight: 700;
 }
 
 /**********************/
@@ -1439,8 +1458,8 @@ figure {
   padding: 0;
 }
 
-.u-padding--10-0-0-0 {
-  padding: 10px 0 0 0;
+.u-padding--5-0-0-10 {
+  padding: 5px 0 0 10px;
 }
 
 .u-padding--30-0 {
@@ -1448,8 +1467,8 @@ figure {
 }
 
 @media (min-width: 600px) {
-  .u-padding--tb-22-30 {
-    padding: 22px 30px;
+  .u-pd-top--tb15 {
+    padding-top: 15px;
   }
 }
 
@@ -1505,6 +1524,19 @@ figure {
   }
 }
 
+.u-pd-top--5per {
+  padding-top: 5%;
+}
+
+.u-pd-bottom--5per {
+  padding-bottom: 5%;
+}
+
+.u-pd-right-left--5per {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
 .u-width--50per {
   width: 50%;
 }
@@ -1515,13 +1547,5 @@ figure {
 
 .u-width--100per {
   width: 100%;
-}
-
-.blog-item__thumbnail-image {
-  height: 100%;
-  min-height: 230px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=app.css.map */

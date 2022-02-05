@@ -74,6 +74,12 @@
         font-size: 28px;
     };
 }
+.c-text--20-to-tb26{ 
+    font-size: 20px;
+    @include m.tb{
+        font-size: 26px;
+    };
+}
 .c-text--16{ 
     font-size: 16px;
 }
@@ -108,6 +114,9 @@
 /**********************/
 .c-text--bold{
     font-weight: bold;
+}
+.c-text--bold700{
+    font-weight: 700; 
 }
 
 /**********************/
@@ -151,7 +160,6 @@
     font-size: 16px;
 }
 .c-text--M1m-bold-16{
-    //font-family: 'M+ 1m';
     font-family: 'M PLUS 1p', sans-serif;
     font-weight: bold;
     font-size: 16px;

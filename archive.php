@@ -4,7 +4,8 @@
             <section class="l-archive">
                 <div class="c-flex--fd-column-to-row c-image--archive-top c-bgp-left-to-tb-center c-bgp--left-cover-no-repeat c-bg-color--black">
                     <h2 class="c-text--32-to-tb45 c-text--Roboto c-color--white">Menu:</h2>
-                    <h5 class="c-text--M1m-bold-16 u-padding--10-0-0-0 c-color--white u-padding--tb-22-30">チーズバーガー</h5>
+                    <!-- カテゴリ名を取得して表示 -->
+                    <h5 class="c-text--M1m c-text--bold c-text--20-to-tb26 c-color--white u-padding--5-0-0-10 u-pd-top--tb15"><?php $category = get_the_category(); $cat_name = $category[0]->cat_name; echo $cat_name; ?></h5>
                 </div>
 
                 <div class="c-container--top-title">
@@ -14,28 +15,26 @@
 
 
 
-
                 <!-- 投稿アーカイブ一覧を表示　カテゴリー別 start -->
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <article class="c-flex--fd-column">
 
                         <div class="c-flex--fd-column-to-row c-container--card">
                             <!-- アイキャッチ -->
-                            <div class="blog-item__thumbnail">
+                            <div class="c-flex-1">
                                 <?php if(has_post_thumbnail()): ?>
-                                    <img class="blog-item__thumbnail-image" src="<?php the_post_thumbnail_url('medium'); ?>">
+                                    <img class="c-img--wp-post-thumbnail" src="<?php the_post_thumbnail_url('full'); ?>">
                                 <?php endif; ?>
                             </div>
 
-                            <section class="c-container--card-title c-bg-color--darkbrown">
+                            <section class="c-bg-color--darkbrown c-flex-1">
                                 <!-- タイトル -->
-                                <h4 class="c-text--20-to-pc28 c-text--M1m c-text--lh29 c-text--bold u-pd-bottom--25 c-color--white"><?php the_title(); ?></h4>
+                                <h4 class="c-text--20-to-pc28 c-text--M1m c-text--lh29 c-text--bold c-color--white u-pd-bottom--25 u-pd-top--5per u-pd-right-left--5per"><?php the_title(); ?></h4>
                                 <!-- 本文 -->
                                 <p><?php the_content(); ?></p>
                                 <!-- 詳しく見るボタン　クリックすると投稿シングルページのURLを取得し画面遷移 -->
-                                <div class="c-flex--jc-center c-text-align--center">
-                                    <button class="c-btn--read-more c-color--lightbrown c-text--M1m-bold-16 c-bg-color--white"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
-                                    
+                                <div class="c-flex--jc-center c-text-align--center u-pd-bottom--5per">
+                                    <button class="c-btn--read-more c-text--M1m-bold-16 c-bg-color--white"><a class="c-color--lightbrown" href="<?php the_permalink(); ?>">詳しく見る</a></button>
                                 </div>  
                             </section>
                             

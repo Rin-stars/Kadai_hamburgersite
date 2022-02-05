@@ -1,11 +1,11 @@
             <section class="l-sidebar c-bg-color--dull-lightbeige">
-                <p class="p-nav__title c-text--34 c-text--Roboto c-color--lightbrown u-display--none-to-pc-block">Menu</p>        
+                <p class="p-nav__title c-text--34 c-text--Roboto c-color--lightbrown c-text--bold700 u-display--none-to-pc-block">Menu</p>        
                 <!-- <img class="p-nav__btn--close c-btn--nav-close u-display--pc-none" src="/images/img_common/menu_close_btn.png" alt="メニューボタン"> -->
                 <img class="p-nav__btn--close c-btn--nav-close u-display--pc-none" src="<?php echo get_template_directory_uri(); ?>/images/img_common/menu_close_btn.png" alt="メニュークローズボタン">
 
                 <?php
                     wp_nav_menu(array(
-                        'menu'              => 'categorymenu',
+                        'menu'              => 'sidebar-menu',
                         'container'         => 'nav',
                         'container_class'   => 'p-nav p-nav__category p-nav__item',
                         // 'theme_location'    => 'categorymenu'

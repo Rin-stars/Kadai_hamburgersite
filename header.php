@@ -20,7 +20,7 @@
 
             <header class="l-header c-text--Roboto c-bg-color--lightbeige c-flex--pc-jc-space-between">
                 <h1 class="c-text--header-logo c-text--40-to-pc64-to-pcs55 c-text-align--center-to-pc-initial"><a class="c-color--lightbrown" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                <button class="c-btn--nav-open c-color--lightbrown c-text--20-to-tb30 u-display--pc-none">Menu</button>   
+                <button class="c-btn--nav-open c-color--lightbrown c-text--20-to-tb30 c-text--bold u-display--pc-none">Menu</button>   
                 <div class="p-nav__bg c-bg-color--tp50-black"></div>   
                 
                 <form class="p-search" action="サイト内のキーワード検索">        
