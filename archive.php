@@ -15,7 +15,7 @@
 
 
 
-                <!-- 投稿一覧を表示　カテゴリー別 start -->
+                <!-- 投稿アーカイブ一覧を表示　カテゴリー別 start -->
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <article class="c-flex--fd-column">
 
@@ -32,9 +32,10 @@
                                 <h4 class="c-text--20-to-pc28 c-text--M1m c-text--lh29 c-text--bold u-pd-bottom--25 c-color--white"><?php the_title(); ?></h4>
                                 <!-- 本文 -->
                                 <p><?php the_content(); ?></p>
-                                <!-- 詳しく見るボタン -->
+                                <!-- 詳しく見るボタン　クリックすると投稿シングルページのURLを取得し画面遷移 -->
                                 <div class="c-flex--jc-center c-text-align--center">
-                                    <button class="c-btn--read-more c-color--lightbrown c-text--M1m-bold-16 c-bg-color--white" onclick="location.href='#'">詳しく見る</button>
+                                    <button class="c-btn--read-more c-color--lightbrown c-text--M1m-bold-16 c-bg-color--white"><a href="<?php the_permalink(); ?>">詳しく見る</a></button>
+                                    
                                 </div>  
                             </section>
                             

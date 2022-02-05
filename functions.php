@@ -30,12 +30,11 @@ function Hamburger_site_script() {
         //  サイト共通のjsの読み込み
          wp_enqueue_script( 'jquery', '//code.jquery.com/jquery-3.6.0.min.js' , '', '3.6.0', true );
          wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js' , array(), '1.0.0' );
-
+        //  Googlefontsの読み込み
         //  wp_enqueue_style( 'robot', '//fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', array(), '' );
         //  wp_enqueue_style( 'mplus', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap', array(), '' );
-        //  wp_enqueue_style( 'Mplus_1p', 'https://fonts.googleapis.com/earlyaccess/mplus1p.css' );
-
-        
+            wp_register_style( 'robot', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+            wp_register_style( 'mplus', 'https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&display=swap');
     }
     add_action( 'wp_enqueue_scripts', 'Hamburger_site_script' );
     
