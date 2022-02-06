@@ -20,7 +20,7 @@
         transition: none;
     };
     @include m.pc-s{
-        width   : 270px;
+        width   : 280px;
     };
     &.is-open{
         right: 0;

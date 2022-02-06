@@ -5,10 +5,13 @@
 
                 <?php
                     wp_nav_menu(array(
-                        'menu'              => 'sidebar-menu',
-                        'container'         => 'nav',
-                        'container_class'   => 'p-nav p-nav__category p-nav__item',
-                        // 'theme_location'    => 'categorymenu'
+                        // 'menu'              => '',
+                        // 'theme_location'    => '',
+                        // 'container'         => '',
+                        'container_class'   => 'p-nav c-text--M1m', // navタグ
+                        // 'menu_class'        => '', // ulタグ
+                        'add_li_class'      => 'p-nav__item u-padding--10 p-nav__item:first-child p-nav__item:last-child', // liタグ(functions.phpでclass追加必要）
+                        'add_a_class'       => 'c-color--lightbrown' // aタグ(functions.phpでclass追加必要）
                     ));
                 ?>
 
