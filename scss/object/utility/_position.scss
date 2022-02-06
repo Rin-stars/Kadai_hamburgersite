@@ -1,0 +1,10 @@
+@use '../../foundation/mixin' as m;
+
+.u-position--relative{
+    position: relative;
+}
+.u-position--absolute{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}

@@ -3,22 +3,38 @@
             <section class="l-single">
 
                 <!-- トップの画像 Start-->
-                <section class="c-image--single-top  c-bgp--center-cover-no-repeat">
-                    <h1 class="c-text--35-to-tb55 c-text-bold c-text--M1m c-color--white">h1 チーズバーガー</h1>
-                </section>
+                <?php if(has_post_thumbnail()): ?>
+                    <div class="u-position--relative">
+                        <!-- アイキャッチ画像 -->
+                        <img class="c-img--wp-post-thumbnail" src="<?php the_post_thumbnail_url('full'); ?>">
+                        <!-- タイトル -->
+                        <h1 class="c-text--35-to-tb55 c-text-bold c-text--M1m c-color--white u-position--absolute"><?php the_title(); ?></h1>
+                    </div>
+                <?php endif; ?>
+
+
+
+                <!-- <section class="c-image--single-top  c-bgp--center-cover-no-repeat">
+                    <h1 class="c-text--35-to-tb55 c-text-bold c-text--M1m c-color--white"><?php the_title(); ?></h1>
+                </section> -->
+
 
                 <!-- シングルページ　メイン Start-->
                 <section class="c-container--single-main">
-                    <!-- 見出し Start-->
-                    <h2 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh2</h2>
+
+                    <!-- 本文 -->
+                    <p><?php the_content(); ?></p>
+
+                    <!-- 見出し Start -->
+                    <!-- <h2 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh2</h2>
                     <p class="c-text--16 c-text--M1m c-text--lh23 c-color--darkbrown u-pd-bottom--30-to-tb60">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
                     <h3 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh3</h3>
                     <h4 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh4</h4>
                     <h5 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh5</h5>
                     <h6 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh6</h6>
-
+ -->
                     <!-- 引用タグ Start-->
-                    <div class="c-text--M1m c-text--16 c-text--lh23 c-color--darkbrown c-bg-color--dull-lightgray u-padding--30-20-to-tb50 u-mg-bottom--30-to-tb60">
+                    <!-- <div class="c-text--M1m c-text--16 c-text--lh23 c-color--darkbrown c-bg-color--dull-lightgray u-padding--30-20-to-tb50 u-mg-bottom--30-to-tb60">
                         <div>
                             <p>Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
                         </div>
@@ -26,7 +42,7 @@
                             <span>出典元 :</span>
                             <a class="c-color--dull-blue c-text-deco--underline" href="#">○○○○○○○○○○○○</a>
                         </div>
-                    </div>
+                    </div> -->
 
 
 
@@ -138,42 +154,8 @@
 
             </section>
 
-            <!-- サイドバー Start-->
-            <section class="l-sidebar c-bg-color--dull-lightbeige">
-                <p class="p-nav__title c-text--34 c-text--Roboto c-color--lightbrown u-display--none-to-pc-block">Menu</p>        
-                <img class="p-nav__btn--close c-btn--nav-close u-display--pc-none" src="/images/img_common/menu_close_btn.png" alt="メニューボタン">
-                <nav class="p-nav">
-                    <ul class="p-nav__category">    
-                        <li class="p-nav__item"><a href="#">バーガー</a></li>
-                        <li class="p-nav__item"><a href="#">ハンバーガー</a></li>
-                        <li class="p-nav__item"><a href="#">チーズバーガー</a></li>
-                        <li class="p-nav__item"><a href="#">テリヤキバーガー</a></li>
-                        <li class="p-nav__item"><a href="#">アボガドバーガー</a></li>
-                        <li class="p-nav__item"><a href="#">フィッシュバーガー</a></li>
-                        <li class="p-nav__item"><a href="#">ベーコンバーガー</a></li>
-                        <li class="p-nav__item"><a href="#">チキンバーガー</a></li>
-                    </ul>
-                    <ul class="p-nav__category">    
-                        <li class="p-nav__item"><a href="#">サイド</a></li>
-                        <li class="p-nav__item"><a href="#">ポテト</a></li>
-                        <li class="p-nav__item"><a href="#">サラダ</a></li>
-                        <li class="p-nav__item"><a href="#">ナゲット</a></li>
-                        <li class="p-nav__item"><a href="#">コーン</a></li>
-                    </ul>
-                    <ul class="p-nav__category">    
-                        <li class="p-nav__item"><a href="#">ドリンク</a></li>
-                        <li class="p-nav__item"><a href="#">コーラ</a></li>
-                        <li class="p-nav__item"><a href="#">ファンタ</a></li>
-                        <li class="p-nav__item"><a href="#">オレンジ</a></li>
-                        <li class="p-nav__item"><a href="#">アップル</a></li>
-                        <li class="p-nav__item"><a href="#">紅茶（Ice/Hot）</a></li>
-                        <li class="p-nav__item"><a href="#">コーヒー（Ice/Hot）</a></li>
-                    </ul>
-                </nav>        
-            </section>
-        </div>
-
-        <?php get_sidebar(); ?>
+            <?php get_sidebar(); ?>
+            
         </div>
 
 <?php get_footer(); ?> 

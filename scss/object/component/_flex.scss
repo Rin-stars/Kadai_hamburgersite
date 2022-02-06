@@ -19,6 +19,10 @@
     display: flex;
     align-items: flex-end;
 }
+.c-flex--ai-center {
+    display: flex;
+    align-items: center;
+  }
 .c-flex--fd-row-reverse{
     flex-direction: row-reverse;
 }

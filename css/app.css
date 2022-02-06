@@ -694,6 +694,11 @@ figure {
   align-items: flex-end;
 }
 
+.c-flex--ai-center {
+  display: flex;
+  align-items: center;
+}
+
 .c-flex--fd-row-reverse {
   flex-direction: row-reverse;
 }
@@ -1544,6 +1549,16 @@ figure {
 .u-pd-right-left--5per {
   padding-right: 5%;
   padding-left: 5%;
+}
+
+.u-position--relative {
+  position: relative;
+}
+
+.u-position--absolute {
+  position: absolute;
+  top: 50%;
+  left: 5%;
 }
 
 .u-width--50per {
