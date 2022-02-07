@@ -1289,7 +1289,7 @@ figure {
 /***********************/
 /*  wp_nav_menu 関数    */
 /***********************/
-.category-menu {
+.menu > .category-menu {
   font-weight: bold;
 }
 
