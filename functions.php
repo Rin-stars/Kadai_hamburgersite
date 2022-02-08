@@ -68,4 +68,13 @@ add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
 register_nav_menu('sidebar-menu', 'サイドバーメニュー');
 
 
+// スラッグ名が日本語だったら自動的に投稿タイプ＋id付与へ変更（スラッグを設定した場合は適用しない）
+function auto_post_slug( $slug, $post_ID, $post_status, $post_type ) {
+    if ( preg_match( '/(%[0-9a-f]{2})+/', $slug ) ) {
+        $slug = utf8_uri_encode( $post_type ) . '-' . $post_ID;
+    }
+    return $slug;
+}
+add_filter( 'wp_unique_post_slug', 'auto_post_slug', 10, 4  );
+
 ?>

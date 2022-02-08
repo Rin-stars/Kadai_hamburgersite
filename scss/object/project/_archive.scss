@@ -1,0 +1,28 @@
+@use '../../foundation/mixin' as m;
+
+/************************/
+/*      WordPress       */
+/************************/
+.p-archive-roop h2{
+    padding-right: 5%;
+    padding-left: 5%;
+    color: white;
+    font-size: 18px;
+    @include m.tb{
+        font-size: 20px;
+    };
+    @include m.pc{
+        font-size: 22px;
+    };
+}
+.p-archive-roop .wp-block-preformatted{
+    padding-right: 5%;
+    padding-left: 5%;
+    color: white;
+    font-weight: initial;
+    font-family: 'M PLUS 1p', sans-serif;
+    line-height: 29px;
+}
+.p-archive-roop .more-link{
+    display: none;
+}

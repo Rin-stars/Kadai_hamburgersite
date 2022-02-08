@@ -1,0 +1,24 @@
+@use '../../foundation/mixin' as m;
+
+/************************/
+/*      WordPress       */
+/************************/
+
+.p-single-roop h2,
+.p-single-roop h3,
+.p-single-roop h4,
+.p-single-roop h5,
+.p-single-roop h6{
+    color: #3C2A10;
+    font-weight: bold;
+    font-family: 'M PLUS 1p', sans-serif;
+    line-height: 29px;
+    padding-bottom: 25px;
+}
+
+.p-single-roop .wp-block-preformatted{
+    color: #3C2A10;
+    line-height: 23px;
+    font-family: 'M PLUS 1p', sans-serif;
+    padding-bottom: 25px;
+}

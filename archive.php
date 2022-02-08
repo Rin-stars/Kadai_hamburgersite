@@ -27,16 +27,23 @@
                                 <?php endif; ?>
                             </div>
 
-                            <section class="c-bg-color--darkbrown c-flex-1">
+                            <section class="p-archive-roop c-bg-color--darkbrown c-flex-1">
+                                
                                 <!-- タイトル -->
-                                <h4 class="c-color--white c-text--20-to-pc28 c-text--M1m c-text--lh29 c-text--bold u-pd-bottom--25 u-pd-top--5per u-pd-right-left--5per"><?php the_title(); ?></h4>
+                                <h1 class="c-color--white c-text--22-to-pc28 c-text--M1m c-text--lh29 c-text--bold u-pd-bottom--25 u-pd-top--5per u-pd-right-left--5per"><?php the_title(); ?></h1>
                                 <!-- 本文 -->
-                                <p class="c-color--white c-text--M1m c-text--lh29 u-pd-right-left--5per"><?php echo wp_trim_words( get_the_content(), 100, '...' ); ?></p>
-                                <!-- <p><?php the_content(); ?></p> -->
+                                <p class="c-color--white c-text--M1m c-text--lh29 u-pd-right-left--5per">
+                                    <!-- 直後のテンプレートタグのデフォルト機能、pタグ付与を無効にする -->
+                                    <!-- <?php remove_filter('the_content', 'wpautop'); ?> -->
+                                    <!-- 本文の取得 -->
+                                    <?php the_content(); ?>
+                                </p>
+                                
                                 <!-- 詳しく見るボタン　クリックすると投稿シングルページのURLを取得し画面遷移 -->
                                 <div class="c-flex--jc-center c-text-align--center u-pd-bottom--5per">
                                     <button class="c-btn--read-more c-text--M1m-bold-16 c-bg-color--white"><a class="c-color--lightbrown" href="<?php the_permalink(); ?>">詳しく見る</a></button>
-                                </div>  
+                                </div> 
+
                             </section>
                             
                         </div>

@@ -20,10 +20,10 @@
 
 
                 <!-- シングルページ　メイン Start-->
-                <section class="c-container--single-main">
+                <section class="p-single-roop c-container--single-main">
 
                     <!-- 本文 -->
-                    <p><?php the_content(); ?></p>
+                    <?php the_content(); ?>
 
                     <!-- 見出し Start -->
                     <!-- <h2 class="c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--30-to-tb60">見出しh2</h2>

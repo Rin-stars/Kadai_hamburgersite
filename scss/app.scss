@@ -29,8 +29,10 @@
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
+@use "object/project/_archive";
 @use "object/project/navigation";
 @use "object/project/search";
+@use "object/project/single";
 @use "object/project/table";
 
 // -----------------------------------------------------------------

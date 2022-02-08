@@ -37,7 +37,7 @@
 /*  wp_nav_menu 関数    */
 /***********************/
 // WPメニュー登録画面のカテゴリーに付与したクラス
-.menu > .category-menu{
+.menu > li {
     font-weight: bold;
 }
 // WPデフォルトクラス　メニューのul子要素
