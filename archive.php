@@ -1,7 +1,8 @@
-<?php get_header(); ?>
-
+    <!-- ヘッダー -->
+    <?php get_header(); ?>
 
             <section class="l-archive">
+
                 <div class="c-flex--fd-column-to-row c-image--archive-top c-bgp-left-to-tb-center c-bgp--left-cover-no-repeat c-bg-color--black">
                     <h2 class="c-text--32-to-tb45 c-text--Roboto c-color--white">Menu:</h2>
                     <!-- カテゴリ名を取得して表示 -->
@@ -51,6 +52,7 @@
                         </div>
                         
                     </article>
+                    
                 <?php endwhile; endif; ?>
                 <!-- 投稿一覧を表示　end -->
                 
@@ -134,4 +136,5 @@
             
         </div>
 
-<?php get_footer(); ?> 
+    <!-- フッター -->
+    <?php get_footer(); ?> 
