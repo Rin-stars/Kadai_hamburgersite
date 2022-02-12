@@ -41,7 +41,9 @@
                                 
                                 <!-- 詳しく見るボタン　クリックすると投稿シングルページのURLを取得し画面遷移 -->
                                 <div class="c-flex--jc-center c-text-align--center u-pd-bottom--5per">
-                                    <button class="c-btn--read-more c-text--M1m-bold-16 c-bg-color--white"><a class="c-color--lightbrown" href="<?php the_permalink(); ?>">詳しく見る</a></button>
+                                    <a href="<?php the_permalink(); ?>">
+                                        <button class="c-btn--read-more c-color--lightbrown c-text--M1m-bold-16 c-bg-color--white">詳しく見る</button>
+                                    </a>
                                 </div> 
 
                             </section>
