@@ -381,7 +381,7 @@ figure {
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .l-header {
-    width: calc(100% - 270px);
+    width: calc(100% - 280px);
   }
 }
 
@@ -392,7 +392,7 @@ figure {
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   .l-front, .l-archive, .l-search, .l-single, .l-page {
-    width: calc(100% - 270px);
+    width: calc(100% - 280px);
   }
 }
 
@@ -1138,10 +1138,6 @@ figure {
   }
 }
 
-.c-text--16 {
-  font-size: 16px;
-}
-
 .c-text--18-to-pc22 {
   font-size: 18px;
 }
@@ -1149,6 +1145,19 @@ figure {
   .c-text--18-to-pc22 {
     font-size: 22px;
   }
+}
+
+.c-text--16-to-pc18 {
+  font-size: 16px;
+}
+@media (min-width: 1025px) {
+  .c-text--16-to-pc18 {
+    font-size: 18px;
+  }
+}
+
+.c-text--16 {
+  font-size: 16px;
 }
 
 .c-text--14 {
@@ -1377,6 +1386,47 @@ figure {
   }
 }
 
+/********************************************************/
+/*      WordPress search.phpの為に新規追加したクラス       */
+/********************************************************/
+.p-search-result {
+  padding: 5%;
+  color: #3C2A10;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.p-search-result__title {
+  margin-bottom: 20px;
+}
+
+.p-search-result__count {
+  margin-bottom: 20px;
+}
+
+.p-search-result__item {
+  margin: 20px;
+  padding: 40px;
+  background-color: #f0efef;
+  border-radius: 30px;
+}
+
+.p-search-result__item-title {
+  padding-bottom: 20px;
+}
+
+.p-search-result__item-title a,
+.p-search-result__link a {
+  color: #3C2A10;
+}
+
+.p-search-result__link {
+  width: 163px;
+  height: 42px;
+  margin-top: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
 /************************/
 /*      WordPress       */
 /************************/
@@ -1458,6 +1508,10 @@ figure {
   .u-mg-top--30-to-tb50 {
     margin-top: 50x;
   }
+}
+
+.u-mg-top--40 {
+  margin-top: 40px;
 }
 
 .u-mg-bottom--60 {

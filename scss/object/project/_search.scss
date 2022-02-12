@@ -36,3 +36,39 @@
         width: 200px;
     };
 }
+
+/********************************************************/
+/*      WordPress search.phpの為に新規追加したクラス       */
+/********************************************************/
+
+.p-search-result{
+    padding: 5%;
+    color: #3C2A10;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.p-search-result__title{
+    margin-bottom: 20px;
+}
+.p-search-result__count{
+    margin-bottom: 20px;
+}
+.p-search-result__item{
+    margin: 20px;
+    padding: 40px;
+    background-color: #f0efef;
+    border-radius: 30px;
+}
+.p-search-result__item-title{
+    padding-bottom: 20px;
+}
+.p-search-result__item-title a,
+.p-search-result__link a {
+    color: #3C2A10;
+}
+.p-search-result__link{
+    width:163px;
+    height:42px;
+    margin-top: 20px;
+    border-radius:40px;
+    cursor: pointer;
+}

@@ -127,6 +127,7 @@
 
             </section>
 
+            <!-- サイドバー -->
             <?php get_sidebar(); ?>
             
         </div>
