@@ -34,8 +34,6 @@
                                 <h1 class="c-color--white c-text--22-to-pc28 c-text--M1m c-text--lh29 c-text--bold u-pd-bottom--25 u-pd-top--5per u-pd-right-left--5per"><?php the_title(); ?></h1>
                                 <!-- 本文 -->
                                 <p class="c-color--white c-text--M1m c-text--lh29 u-pd-right-left--5per">
-                                    <!-- 直後のテンプレートタグのデフォルト機能、pタグ付与を無効にする -->
-                                    <!-- <?php remove_filter('the_content', 'wpautop'); ?> -->
                                     <!-- 本文の取得 -->
                                     <?php the_content(); ?>
                                 </p>

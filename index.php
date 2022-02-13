@@ -16,14 +16,17 @@
 
                         <div class="c-container--front-inner">
 
-                            <!-- カテゴリー：テイクアウトの一覧表示へのリンク -->
-                            <a href="/index.php?cat=8">
+                            <!-- カテゴリー名からカテゴリーIDの取得 -->
+                            <?php $cat_takeout_id = get_cat_ID('テイクアウト');?>
+                            
+                            <!-- カテゴリーIDからカテゴリー一覧へのURL取得 -->
+                            <a href="<?php echo get_category_link($cat_takeout_id); ?>">
                                 <div class="c-container--front-items c-bg-color--tp80-white">
                                     <h4 class="c-text--23 c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--20">Take OUT</h4>
                                     <p class="c-text--16 c-text--M1m c-text--lh23 c-color--darkbrown">当店のテイクアウトで利用できる商品を掲載しています。ハンバーガーハンバーガー</p>
                                 </div>
                             </a>
-                            <a href="/index.php?cat=8">
+                            <a href="<?php echo get_category_link($cat_takeout_id); ?>">
                                 <div class="c-container--front-items c-bg-color--tp80-white">
                                     <h4 class="c-text--23 c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--20">Take OUT</h4>
                                     <p class="c-text--16 c-text--M1m c-text--lh23 c-color--darkbrown">当店のテイクアウトで利用できる商品を掲載しています。ハンバーガーハンバーガー</p>
@@ -41,14 +44,17 @@
 
                         <div class="c-container--front-inner">
 
-                            <!-- カテゴリー：イートインの一覧表示へのリンク -->
-                            <a href="/index.php?cat=9">
+                            <!-- カテゴリー名からカテゴリーIDの取得 -->
+                            <?php $cat_eatin_id = get_cat_ID('イートイン');?>
+
+                            <!-- カテゴリーIDからカテゴリー一覧へのURL取得 -->
+                            <a href="<?php echo get_category_link($cat_eatin_id); ?>">
                                 <div class="c-container--front-items c-bg-color--tp80-white">
                                     <h4 class="c-text--23 c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--20">Eat IN</h4>
                                     <p class="c-text--16 c-text--M1m c-text--lh23 c-color--darkbrown">当店のイートインで利用できる商品を掲載しています。アボガドバーガーアボガドバーガーアボガドバーガー</p>
                                 </div>
                             </a>
-                            <a href="/index.php?cat=9">
+                            <a href="<?php echo get_category_link($cat_eatin_id); ?>">
                                 <div class="c-container--front-items c-bg-color--tp80-white">
                                     <h4 class="c-text--23 c-text--M1m c-text--bold c-color--darkbrown u-pd-bottom--20">Eat IN</h4>
                                     <p class="c-text--16 c-text--M1m c-text--lh23 c-color--darkbrown">当店のイートインで利用できる商品を掲載しています。アボガドバーガーアボガドバーガーアボガドバーガー</p>
