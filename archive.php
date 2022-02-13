@@ -4,9 +4,20 @@
             <section class="l-archive">
 
                 <div class="c-flex--fd-column-to-row c-image--archive-top c-bgp-left-to-tb-center c-bgp--left-cover-no-repeat c-bg-color--black">
+
                     <h2 class="c-text--32-to-tb45 c-text--Roboto c-color--white">Menu:</h2>
-                    <!-- カテゴリ名を取得して表示 -->
-                    <h5 class="c-text--M1m c-text--bold c-text--20-to-tb26 c-color--white u-padding--5-0-0-10 u-pd-top--tb15"><?php $category = get_the_category(); $cat_name = $category[0]->cat_name; echo $cat_name; ?></h5>
+
+                    <!-- 表示しているカテゴリー情報を取得して表示 -->
+                    <h5 class="c-text--M1m c-text--bold c-text--20-to-tb26 c-color--white u-padding--5-0-0-10 u-pd-top--tb15">
+                        <?php
+                            $cat = get_queried_object();
+                            $cat_name = $cat -> name;
+                            echo $cat_name;
+                        ?>
+                    </h5>
+                    <!-- NG カテゴリーが複数ある場合、表示しているカテゴリーがどれかを判断できていない <h5 class="c-text--M1m c-text--bold c-text--20-to-tb26 c-color--white u-padding--5-0-0-10 u-pd-top--tb15"><?php $category = get_the_category(); $cat_name = $category[0]->cat_name; echo $cat_name; ?></h5> -->
+
+                    
                 </div>
 
                 <div class="c-container--top-title">
