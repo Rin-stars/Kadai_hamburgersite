@@ -1,7 +1,13 @@
+$sp:599px; //SP
 $tb:600px; //Tablet
 $pc:1025px; //PC
 $pc-s:1440px; //PC small
 
+@mixin sp {
+    @media (max-width: ($sp)) {
+        @content;
+    }
+}
 
 @mixin tb {
     @media (min-width: ($tb)) {
