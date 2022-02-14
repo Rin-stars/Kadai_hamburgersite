@@ -1449,6 +1449,28 @@ figure {
   padding-bottom: 25px;
 }
 
+.p-single-roop ol li {
+  list-style: auto;
+}
+
+.wp-block-media-text p,
+.p-single-roop ol li,
+.p-single-roop ul li,
+.wp-block-code {
+  color: #3C2A10;
+  line-height: 23px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.wp-block-code {
+  padding: 30px;
+  background-color: #F5F5F5;
+}
+
+.wp-block-column tr td {
+  border: 1px #707070 solid;
+}
+
 .p-table {
   width: 100%;
   border-collapse: collapse;
