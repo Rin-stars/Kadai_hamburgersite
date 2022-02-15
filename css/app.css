@@ -733,7 +733,14 @@ figure {
   }
 }
 
-.c-flex-1 {
+.c-flex--center {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-flex--1 {
   flex: 1;
 }
 
@@ -1338,6 +1345,45 @@ figure {
 
 .sub-menu {
   padding-left: 10px;
+}
+
+/************************/
+/*      WordPress       */
+/************************/
+.wp-pagenavi {
+  background: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  padding: 10px 15px;
+  color: #707070;
+  border: 1px solid #707070;
+}
+
+.wp-pagenavi span.pages,
+.wp-pagenavi a.previouspostslink,
+.wp-pagenavi a.nextpostslink,
+.wp-pagenavi a.first,
+.wp-pagenavi a.last,
+.wp-pagenavi span.extend {
+  border: none;
+}
+
+.wp-pagenavi a.previouspostslink,
+.wp-pagenavi a.nextpostslink {
+  padding-bottom: 12px;
+  font-size: 30px;
+  font-weight: initial;
+}
+
+.wp-pagenavi span.current {
+  color: white;
+  background-color: #3C2B1C;
 }
 
 .p-search {

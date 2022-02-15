@@ -50,6 +50,12 @@
         gap: 20px;
     }
 }
-.c-flex-1{
+.c-flex--center{    // 幅や高さを指定できない要素でもOK。親要素に指定して子要素を中央揃えに。
+    height: 100px;  // 高さがないと中配置できないので必ず設定。
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-flex--1{
     flex: 1;
 }

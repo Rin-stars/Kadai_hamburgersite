@@ -33,13 +33,13 @@
 
                         <div class="c-flex--fd-column-to-row c-container--card">
                             <!-- アイキャッチ -->
-                            <div class="c-flex-1">
+                            <div class="c-flex--1">
                                 <?php if(has_post_thumbnail()): ?>
                                     <img class="c-img--wp-post-thumbnail" src="<?php the_post_thumbnail_url('full'); ?>">
                                 <?php endif; ?>
                             </div>
 
-                            <section class="p-archive-roop c-bg-color--darkbrown c-flex-1">
+                            <section class="p-archive-roop c-bg-color--darkbrown c-flex--1">
                                 
                                 <!-- タイトル -->
                                 <h1 class="c-color--white c-text--22-to-pc28 c-text--M1m c-text--lh29 c-text--bold u-pd-bottom--25 u-pd-top--5per u-pd-right-left--5per"><?php the_title(); ?></h1>
@@ -106,8 +106,12 @@
                     </div>
                 </article> -->
 
+                <!-- ページネーション -->
+                <div class="c-text--Roboto c-text--bold c-text-align--center u-pd-bottom--30 u-pd-top--5per">
+                    <?php wp_pagenavi(); ?>
+                </div>
                 <!-- SP向けページネーション -->
-                <div class="u-display--tb-none">
+                <!-- <div class="u-display--tb-none">
                     <div class="c-container--page c-flex--jc-space-between c-text-align--center">
                         <div class="c-container--btn">
                             <a class="c-btn--pe-prev" href="#"></a>
@@ -118,10 +122,10 @@
                             <a class="c-btn--pe-next" href="#"></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <!-- TB＆PC向けページネーション -->
-                <div class="c-container--page-nav u-display--none-to-tb-block c-text-align--center">
+                <!-- <div class="c-container--page-nav u-display--none-to-tb-block c-text-align--center">
                     <ul class="c-btn--page-nav c-text--16 c-text--Roboto c-color--lightbrown u-padding--0">
                         <li class="c-text--16 c-text--Roboto c-color--lightbrown u-border--none">page 1/10</li>
                         <a class="c-btn--pe-prev" href="#"></a>
@@ -136,7 +140,7 @@
                         <li>9</li>
                         <a class="c-btn--pe-next" href="#"></a>
                     </ul>
-                </div>  
+                </div>   -->
 
             </section>
 
