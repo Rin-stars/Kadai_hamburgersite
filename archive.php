@@ -65,11 +65,6 @@
                 <?php endwhile; endif; ?>
                 <!-- 投稿一覧を表示　end -->
                 
-
-
-
-
-
                 <!-- <article class="c-flex--fd-column">
                     <div class="c-flex--fd-column-to-row c-container--card">
                         <figure class="c-image--card c-bgp--left-cover-no-repeat"></figure>
@@ -107,9 +102,11 @@
                 </article> -->
 
                 <!-- ページネーション -->
-                <div class="c-text--Roboto c-text--bold c-text-align--center u-pd-bottom--30 u-pd-top--5per">
+                <div class="c-text--Roboto c-text--bold c-text-align--center u-pd-top--5per">
                     <?php wp_pagenavi(); ?>
                 </div>
+
+                
                 <!-- SP向けページネーション -->
                 <!-- <div class="u-display--tb-none">
                     <div class="c-container--page c-flex--jc-space-between c-text-align--center">

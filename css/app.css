@@ -1347,9 +1347,9 @@ figure {
   padding-left: 10px;
 }
 
-/************************/
-/*      WordPress       */
-/************************/
+/********************************************/
+/*      WordPress プラグインPageNaviの設定     */
+/********************************************/
 .wp-pagenavi {
   background: white;
   height: 100px;
@@ -1357,9 +1357,15 @@ figure {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 599px) {
+  .wp-pagenavi {
+    justify-content: space-around;
+  }
+}
 
 .wp-pagenavi a,
 .wp-pagenavi span {
+  margin: 5px;
   padding: 10px 15px;
   color: #707070;
   border: 1px solid #707070;
@@ -1384,6 +1390,43 @@ figure {
 .wp-pagenavi span.current {
   color: white;
   background-color: #3C2B1C;
+}
+
+@media (max-width: 599px) {
+  .wp-pagenavi span.pages,
+.wp-pagenavi span.current,
+.wp-pagenavi a,
+.wp-pagenavi span.extend {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .wp-pagenavi a.previouspostslink,
+.wp-pagenavi a.nextpostslink {
+    display: block;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 599px) {
+  .wp-pagenavi a.previouspostslink::after {
+    content: "前へ";
+    padding-left: 5px;
+    font-size: 16px;
+    color: #707070;
+    font-family: "M PLUS 1p", sans-serif;
+  }
+}
+
+@media (max-width: 599px) {
+  .wp-pagenavi a.nextpostslink::before {
+    content: "次へ";
+    padding-right: 5px;
+    font-size: 16px;
+    color: #707070;
+    font-family: "M PLUS 1p", sans-serif;
+  }
 }
 
 .p-search {

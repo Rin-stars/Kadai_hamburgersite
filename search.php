@@ -56,7 +56,7 @@
                 
 
                 <!-- ページネーション -->
-                <div class="c-text--Roboto c-text--bold c-text-align--center u-pd-bottom--30 u-pd-top--5per">
+                <div class="c-text--Roboto c-text--bold c-text-align--center u-pd-top--5per">
                     <?php wp_pagenavi(); ?>
                 </div>
 
